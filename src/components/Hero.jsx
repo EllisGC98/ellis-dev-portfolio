@@ -71,7 +71,7 @@ function Hero() {
                                 aria-label='github'
                                 rel='noreferrer'
                                 target='_blank'
-                                href='https://github.com/EllisGC/'
+                                href='https://github.com/EllisGC98'
                             >
                                 <FontAwesomeIcon icon={faGithub} size='3x' />
                             </a>
