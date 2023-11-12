@@ -2,6 +2,7 @@ import '../App.css';
 import ProjectBox from './ProjectBox';
 import dApp from '../assets/MintPage.PNG';
 import NFTWeb from '../assets/OddOrcsWeb.PNG';
+import Inspire from '../assets/InspireSS.png';
 
 
 
@@ -34,6 +35,17 @@ function Projects() {
                         techstack2="Express.js"
                         code="https://github.com/EllisGC/odd-orc-minter"
                         demo="https://oddorcs.io/"
+                        scrollY="-83%"
+                        icon=""
+                        />
+                        <ProjectBox
+                        title="Inspire Male Image"
+                        img={Inspire}
+                        description="A React JS website for Inspire Male Image which utilises React-router-dom for a multi page approach. "
+                        techstack1="React"
+                        techstack2="JavaScript"
+                        code="https://github.com/EllisGC98/inspiremaleimageweb"
+                        demo="https://inspiremaleimage.netlify.app/"
                         scrollY="-83%"
                         icon=""
                         />

@@ -20,9 +20,12 @@ function About() {
                             with a passion for Web3. 👨‍💻
                         </h4>
                         <p>
-                        Hey, I'm Ellis, a Computer Science graduate from Ulster University with a knack for Front-End React development. I thrive on crafting seamless user experiences that blend technology and creativity.
-                       <br></br> Passionate about the potential of web3 and blockchain, I'm drawn to the decentralized future they promise. 
-                       <br></br>When I'm not coding, I'm a freedom seeker and traveler, exploring new horizons to fuel my creativity
+
+                            Hello there! I'm Ellis, a Computer Science graduate from Ulster University, specializing in Front-End React development. I have a genuine passion for crafting smooth and immersive user experiences that seamlessly merge technology with creativity.
+
+                            <br></br> Currently engaged in production support within the financial sector, I dedicate my spare time to front-end development. Notably, I've successfully built and sold out my own NFT project, showcasing my deep interest in the web3 space.
+
+                            <br></br>Outside the coding arena, I'm a freedom seeker and avid traveler, always on the lookout for new experiences to fuel my creative spark.
 
 
                         </p>
