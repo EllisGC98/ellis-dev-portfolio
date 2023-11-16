@@ -21,7 +21,7 @@ function About() {
                         </h4>
                         <p>
 
-                            Hello there! I'm Ellis, a Computer Science graduate from Ulster University, specializing in Front-End React development. I have a genuine passion for crafting smooth and immersive user experiences that seamlessly merge technology with creativity.
+                            Hello there! I'm Ellis, a Computer Science graduate from Ulster University, specialising in Front-End React development. I have a genuine passion for crafting smooth and immersive user experiences that seamlessly merge technology with creativity.
 
                             <br></br> Currently engaged in production support within the financial sector, I dedicate my spare time to front-end development. Notably, I've successfully built and sold out my own NFT project, showcasing my deep interest in the web3 space.
 

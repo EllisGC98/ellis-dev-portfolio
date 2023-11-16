@@ -55,7 +55,7 @@ function Hero() {
                     
                         
                         <p>
-                            A Front-End React Developer based in Belfast, Ireland.
+                            A Front-End React Developer based in Belfast, N.Ireland.
                         </p>
                         <span>
                             <a
