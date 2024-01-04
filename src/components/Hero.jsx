@@ -10,39 +10,45 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-
-
 function Hero() {
     const skillsIcons = [
         {
             img: HTML,
             title: "HTML5",
+            percentage: 100,
         },
         {
             img: CSS,
             title: "CSS3",
+            percentage: 100,
         },
         {
             img: JS,
             title: "JavaScript",
+            percentage: 100,
         },
         {
             img: React,
             title: "React",
+            percentage: 100,
         },
         {
             img: Sol,
-            title: "Solidity"
+            title: "Solidity",
+            percentage: 100,
         },
         {
             img: ETH,
-            title: "Ethereum"
+            title: "Ethereum",
+            percentage: 100,
         },
         {
             img: Git,
-            title: "Git"
+            title: "Git",
+            percentage: 100,
         },
     ];
+
 
     return (
         <>
@@ -52,8 +58,6 @@ function Hero() {
                 <div className="hero-main">
                     <div className="hero-text">
                         <h1> Hello,<br></br> I'm Ellis Coleman <br></br>👋🏻</h1>
-                    
-                        
                         <p>
                             A Front-End React Developer based in Belfast, N.Ireland.
                         </p>

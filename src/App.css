@@ -129,7 +129,7 @@ nav ul a:hover {
 }
 
 .hero {
-  background-color: #f9f9f9;
+
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -260,6 +260,15 @@ nav ul a:hover {
   width: 3.4rem;
 }
 
+.percentage-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  color: #fff;
+}
+
 .about {
   background-color: #fff;
   padding: 15rem 0;
@@ -277,9 +286,9 @@ nav ul a:hover {
 }
 
 .about-image_workingdev {
-  width: 40rem;
-  height: 20rem;
-  border-radius: 1.7rem;
+  width: 37rem;
+  height: 40rem;
+  border-radius: 4rem;
 }
 
 .about-image span {
@@ -296,6 +305,8 @@ nav ul a:hover {
   width: 19rem;
   animation: rotate 9s linear infinite;
 }
+
+
 
 .about-text {
   padding-right: 1.5rem;
@@ -330,8 +341,13 @@ nav ul a:hover {
   text-decoration: underline aqua;
 }
 
+.chart-container {
+  width: 60px; 
+  height: 60px;
+}
+
+
 .project {
-  background-color: #f9f9f9;
   padding: 15rem 0;
 }
 
@@ -630,6 +646,87 @@ footer h3 {
   transition: all 0.3s;
 }
 
+.experience-container {
+  margin-top: 80px; 
+}
+
+.experience-text {
+  padding-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.experience-text p {
+  color: aqua;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.experience-text h3 {
+  color: #2d2e32;
+  font-size: 3rem;
+  
+}
+
+
+.title {
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+}
+
+.description {
+  margin: 1.5em 0 2em 0;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+}
+
+
+.download-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh; 
+}
+
+.download-button {
+  font-size: 1.5rem;
+  font-family: "Poppins";
+  background-color: #06D6A0;
+  color: black;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+ .download-button:hover {
+  color: #fff;
+  transition: all 0.3s;
+ }
+
+@media only screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(44, 44, 44);
+    margin-top: 1.5em;
+  }
+}
+
+
+
 
 @keyframes morph {
   0% {
@@ -846,4 +943,26 @@ footer h3 {
   to {
     transform: rotate(360deg);
   }
+}
+
+.fade-enter {
+  opacity: 0.01;
+  transform: translateY(20px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0.01;
+  transform: translateY(20px);
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
 }

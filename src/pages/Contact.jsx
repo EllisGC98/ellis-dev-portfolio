@@ -11,7 +11,7 @@ function Contact() {
 
     const form = useRef();
 
-    console.log('Template:', TEMPLATE_ID);
+    //console.log('Template:', TEMPLATE_ID);
 
     const sendEmail = (e) => {
         e.preventDefault();

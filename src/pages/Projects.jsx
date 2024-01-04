@@ -1,5 +1,5 @@
 import '../App.css';
-import ProjectBox from './ProjectBox';
+import ProjectBox from '../components/ProjectBox';
 import dApp from '../assets/MintPage.PNG';
 import NFTWeb from '../assets/OddOrcsWeb.PNG';
 import Inspire from '../assets/InspireSS.png';
@@ -31,7 +31,7 @@ function Projects() {
                         <ProjectBox
                         title="NFT Project"
                         img={NFTWeb}
-                        description="A NFT project landing page website for Odd Orcs."
+                        description="A NFT project landing page website for Odd Orcs built using React. Backend implements a node.js express server that uses axios to post data from the contact form"
                         techstack1="React"
                         techstack2="Express.js"
                         code="https://github.com/EllisGC/odd-orc-minter"
