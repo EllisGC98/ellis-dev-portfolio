@@ -1,6 +1,6 @@
 export const SELECT_LAYER = 'SELECT_LAYER';
 
-export const selectLayer = (layer) => ({
+export const selectLayer = ({ id, layer }) => ({
     type: SELECT_LAYER,
-    payload: layer,
+    payload: {id, layer },
 });

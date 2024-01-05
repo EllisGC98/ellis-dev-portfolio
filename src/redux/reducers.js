@@ -1,19 +1,22 @@
-import { SELECT_LAYER } from "./actions";
+import { SELECT_LAYER } from './actions';
 
-const intialState = {
-    selectedLayers: [],
+const initialState = {
+  selectedLayers: [], // Array to store selected layers
 };
 
-const imageReducer = (state = intialState, action) => {
-    switch (action.type) {
-        case SELECT_LAYER:
-            return {
-                ...state,
-                selectedLayers: [...state.selectedLayers, action.payload],
-            };
-        default:
-            return state;
-    }
+const imageReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case SELECT_LAYER:
+      const { id, layer } = action.payload;
+      const updatedLayers = [...state.selectedLayers];
+      updatedLayers[id - 1] = layer;
+      return {
+        ...state,
+        selectedLayers: updatedLayers,
+      };
+    default:
+      return state;
+  }
 };
 
 export default imageReducer;

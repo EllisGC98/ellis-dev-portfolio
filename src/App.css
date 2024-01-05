@@ -286,8 +286,8 @@ nav ul a:hover {
 }
 
 .about-image_workingdev {
-  width: 37rem;
-  height: 40rem;
+  width: 30rem;
+  height: auto;
   border-radius: 4rem;
 }
 
@@ -597,7 +597,7 @@ button[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin: 20px auto; /* Center the button horizontally */
+  margin: 20px auto; 
   display: block;
   
 }
@@ -606,7 +606,6 @@ button[type="submit"]:hover {
   background-color: aqua;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .contact-form {
     padding: 15px;
@@ -676,7 +675,7 @@ footer h3 {
 
 
 .title {
-  font-size: 4rem;
+  font-size: 40px;
   text-align: center;
   font-family: "Mulish", sans-serif;
 }
@@ -685,12 +684,27 @@ footer h3 {
   margin: 1.5em 0 2em 0;
 }
 
+#description {
+  font-size: 16px;
+}
+
+/* Override styles for the timeline date */
+.date {
+  font-size: 14px;
+  color: #2d2e32; 
+}
+
+
 .vertical-timeline-element-content {
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
     0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
   padding: 2em 3em !important;
+  font-size: 16px;
 }
 
+.vertical-timeline-element-subtitle {
+  font-size: 18px;
+}
 
 .download-button-container {
   display: flex;
@@ -724,6 +738,12 @@ footer h3 {
     margin-top: 1.5em;
   }
 }
+
+.vertical-timeline-element-title {
+  font-size: 21px;
+  color: #2d2e32;
+}
+
 
 
 
