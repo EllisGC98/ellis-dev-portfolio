@@ -4,7 +4,6 @@ import CSS from '../assets/icons/CSS.svg';
 import JS from '../assets/icons/JAVASCRIPT.svg';
 import React from '../assets/icons/REACT.svg';
 import Sol from '../assets/icons/SOLIDITY.svg';
-import ETH from '../assets/icons/ETH.svg'
 import Git from '../assets/icons/GIT.svg';
 import Python from '../assets/icons/PYTHON.svg';
 import Node from '../assets/icons/NODE.svg';
