@@ -6,6 +6,8 @@ import React from '../assets/icons/REACT.svg';
 import Sol from '../assets/icons/SOLIDITY.svg';
 import ETH from '../assets/icons/ETH.svg'
 import Git from '../assets/icons/GIT.svg';
+import Python from '../assets/icons/PYTHON.svg';
+import Node from '../assets/icons/NODE.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -15,37 +17,34 @@ function Hero() {
         {
             img: HTML,
             title: "HTML5",
-            percentage: 100,
         },
         {
             img: CSS,
             title: "CSS3",
-            percentage: 100,
         },
         {
             img: JS,
             title: "JavaScript",
-            percentage: 100,
         },
         {
             img: React,
             title: "React",
-            percentage: 100,
         },
         {
             img: Sol,
             title: "Solidity",
-            percentage: 100,
-        },
-        {
-            img: ETH,
-            title: "Ethereum",
-            percentage: 100,
         },
         {
             img: Git,
             title: "Git",
-            percentage: 100,
+        },
+        {
+            img: Python,
+            title: "Python",
+        },
+        {
+            img: Node,
+            title: "Node",
         },
     ];
 
