@@ -1,25 +1,51 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import LayerSelector from './LayerSelector';
-import SelectedLayers from './SelectedLayers';
+import '../App.css';
 
 const ImageBuilder = () => {
+  // Retrieve selected layers from Redux store
+  const selectedLayers = useSelector((state) => state.selectedLayers);
+
+  // Assume layerOptions structure for each body part
   const layerOptions = {
-    background: ['layers/bg1.jpg', 'layers/bg2.jpg', 'layers/bg3.jpg'], // Replace with your background images
-    body: ['layers/body1.png', 'layers/body2.png', 'layers/body3.png'],   // Replace with your body images
-    head: ['layers/head1.png', 'layers/head2.png', 'layers/head3.png'],   // Replace with your head images
-    // Add more layer types as needed
+    body: ['layers/Orc.png'],
+    skin: ['layers/Ratnob.png', 'layers/Snitgut.png', 'layers/Mudgul.png'],
+    eyes: ['layers/Evil.png', 'layers/Cute.png', 'layers/Shades.png'],
+    mouth: ['layers/Grin.png', 'layers/Tongue.png', 'layers/Cigar.png'],
+  };
+
+
+  // Create image URLs for each selected layer
+  const imageUrl = {
+    mouth: selectedLayers[0] || '',
+    skin: selectedLayers[1] || '',
+    eyes: selectedLayers[2] || '',
+    body: selectedLayers[3] || '',
   };
 
   return (
-    <div>
-      <h1>Image Builder</h1>
-      {Object.entries(layerOptions).map(([layerType, options], index) => (
-        <LayerSelector key={index} dropdownId={index + 1} layerOptions={options} />
-      ))}
-      <SelectedLayers />
+    <>
+    <div className="image-builder-container">
+      <div className="left-section">
+        <h3 className="redux-text">Redux Showcase</h3>
+        <h1 className="heading">Build Your Avatar 👇🏻</h1>
+        {Object.entries(layerOptions).map(([layerType, options], index) => (
+          <LayerSelector key={index} dropdownId={index + 1} layerOptions={options} />
+        ))}
+      </div>
+
+      <div className="right-section">
+        <div
+          className="layered-image"
+          style={{
+            backgroundImage: `url(${imageUrl.body}), url(${imageUrl.mouth}), url(${imageUrl.eyes}), url(${imageUrl.skin})`,
+          }}
+        />
+      </div>
     </div>
+    </>
   );
 };
 
 export default ImageBuilder;
-

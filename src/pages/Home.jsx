@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from '../components/Hero';
 import FadeInOnScroll from '../components/FadeInOnScroll';
+import ImageBuilder from '../components/ImageBuilder';
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <div>
     <FadeInOnScroll>
       <Hero />
+      <ImageBuilder />
     </FadeInOnScroll>
     </div>
   )

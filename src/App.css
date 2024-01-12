@@ -573,7 +573,7 @@ button[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin: 20px auto; 
+  margin: 0 auto; 
   display: block;
   
 }
@@ -664,10 +664,8 @@ footer h3 {
   font-size: 16px;
 }
 
-/* Override styles for the timeline date */
-.date {
-  font-size: 14px;
-  color: #2d2e32; 
+.vertical-timeline-element-content .vertical-timeline-element-date {
+  font-size: 16px !important;
 }
 
 
@@ -720,6 +718,100 @@ footer h3 {
   color: #2d2e32;
 }
 
+
+.image-builder-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section {
+  text-align: left;
+  padding: 20px;
+}
+
+.right-section {
+  text-align: right;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.layered-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+  position: relative;
+}
+
+.layered-image-container {
+  text-align: right; 
+}
+
+.redux-text {
+  margin-bottom: 10px;
+}
+
+.heading {
+  margin-bottom: 20px;
+  color: aqua;
+}
+
+.selected-layers {
+  display: flex;
+  align-items: center;
+}
+
+.selected-layers ul {
+  list-style:none;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.selected-layers li {
+  margin-bottom: 10px;
+}
+
+.layer-selector {
+  margin-bottom: 20px;
+}
+
+.layer-selector h2 {
+  margin-bottom: 10px;
+}
+
+.layer-selector select {
+  width: 600px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+@media (max-width: 1100px) {
+  .image-builder-container {
+    flex-direction:column; 
+  }
+  .layered-image {
+    max-height: 300px;
+    max-width: 300px;
+  }
+
+  .left-section,
+  .right-section {
+    padding: 0;
+  }
+
+  .right-section {
+    margin: 20px;
+    max-width: 100%;
+    padding-right: 40px;
+  }
+  .layer-selector select {
+    width: 300px;
+  }
+  .layer-selector h2 {
+    margin-bottom: 5px;
+  }
+}
 
 
 

@@ -11,8 +11,6 @@ function Contact() {
 
     const form = useRef();
 
-    //console.log('Template:', TEMPLATE_ID);
-
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -47,9 +45,7 @@ function Contact() {
                             <label htmlFor="message">Message</label>
                             <textarea id="message" name="message"></textarea>
                         </div>
-                        <div className="form-group">
                             <button type="submit">Submit</button>
-                        </div>
                     </form>
             </div>
         </section>

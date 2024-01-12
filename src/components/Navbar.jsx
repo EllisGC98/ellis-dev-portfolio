@@ -5,9 +5,12 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import '../App.css';
 import { Link, useNavigate } from 'react-router-dom';
 
+
+
 function Navbar() {
     const [hamburger, setHamburger] = useState(false);
     const navigate = useNavigate();
+
 
     const hamburgerMenu = () => {
         setHamburger(!hamburger);
@@ -20,6 +23,7 @@ function Navbar() {
 
     const pageUp = () => {
         window.scrollTo({ top: (0, 0), behavior: "smooth" });
+
     }
 
 

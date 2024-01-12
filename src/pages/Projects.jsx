@@ -24,7 +24,7 @@ function Projects() {
                         techstack1="React"
                         techstack2="Solidity"
                         code="https://github.com/EllisGC/odd-orc-minter"
-                        demo="https://oddorcsmint.io/"
+                        demo="https://oddorcsmint.netlify.app/"
                         scrollY="-83%"
                         icon=""
                         />
@@ -61,7 +61,6 @@ function Projects() {
                         scrollY="-83%"
                         icon=""
                         />
-
                     </div>
                 </div>
             </div>
