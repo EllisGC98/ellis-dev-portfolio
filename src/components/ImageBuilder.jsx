@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import LayerSelector from './LayerSelector';
+import LayerSelector from './layerSelector';
 import '../App.css';
 
 const ImageBuilder = () => {
