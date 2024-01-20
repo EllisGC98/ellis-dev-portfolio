@@ -69,7 +69,7 @@ function Projects() {
                         techstack1="React JS"
                         techstack2="Redux"
                         code="https://github.com/EllisGC98/cryptopia"
-                        scrollY="-83%"
+                        scrollY="-82%"
                         icon=""
                         />
                     </div>
