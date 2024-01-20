@@ -4,6 +4,7 @@ import dApp from '../assets/MintPage.PNG';
 import NFTWeb from '../assets/OddOrcsWeb.PNG';
 import Inspire from '../assets/InspireSS.png';
 import SmartContract from '../assets/SC.png';
+import Crypto from '../assets/Cryptopia.png';
 
 
 
@@ -58,6 +59,16 @@ function Projects() {
                         techstack2="Ethereum"
                         code="https://etherscan.io/address/0x6eb31d885281d2c980b795ecb387ad015f307d7a#code"
                         demo="https://etherscan.io/address/0x6eb31d885281d2c980b795ecb387ad015f307d7a#code"
+                        scrollY="-83%"
+                        icon=""
+                        />
+                        <ProjectBox
+                        title="Cryptopia"
+                        img={Crypto}
+                        description="Currently building this crypto website which makes uses of Redux and RapidAPI as current project"
+                        techstack1="React JS"
+                        techstack2="Redux"
+                        code="https://github.com/EllisGC98/cryptopia"
                         scrollY="-83%"
                         icon=""
                         />
